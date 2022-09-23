@@ -1,0 +1,18 @@
+---
+ compromise-id: 1
+ compromise-name: "dYdX"
+ description: "npm packages published by dYdX are compromised"
+ compromise-classification:
+  - "subvert-legitimate-package"
+  - "distribute-malicious-version-of-legitimate-package"
+  - "distribute-as-package-maintainer"
+ ecosystem: "npm"
+ earliest-evidence-of-compromise: "09-23-22"
+ date-entry-was-created:
+  - "09-23-22"
+ date-entry-was-last-updated:
+  - "09-23-22"
+ references:
+  - "https://www.bleepingcomputer.com/news/security/npm-packages-used-by-crypto-exchanges-compromised/"
+ Malicious-intent: "yes"
+ packages-affected: [ "@dydxprotocol/solo", "@dydxprotocol/perpetual"]
