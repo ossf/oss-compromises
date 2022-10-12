@@ -2,7 +2,7 @@
 
 This is an attempt to create a comprehensive dataset of open source software compromises. The intention is to help parties that want prevent and mitigate open source software compromises.
 
-All contributions are welcome. Initial effort will focus only on collecting data related to open source software compromises that happen after October 1, 2022. This is an experimental effort. TODO: Elaborate
+All contributions are welcome. Initial effort will focus only on collecting data related to open source software compromises that happen after November 1, 2022. This is an experimental effort.
 
 ## Inclusion Criteria, or What is an Open Source Software Compromise?
 
@@ -25,51 +25,23 @@ This dataset is meant to capture only publicly reported compromises. So there mu
 
 ## How Do I Submit a Compromise?
 
-Make a PR and place a new YAML file into the compromises folder. Each compromise is associated with one YAML file. This project uses a specific structure, described below, for data collection purposes. Fields marked optional are optional. For an example YAML file, see the 'dydx-compromise.yaml' file in the `compromises` folder.
+Make a PR and place a new YAML file into the compromises folder. Each compromise is associated with one YAML file. This project uses a specific structure, described below, for data collection purposes. Fields marked as not required are optional. For an example YAML file, see the '1-dydx.yaml' file in the `compromises` folder.
 
+Note on naming the file: Use `id-name.yaml` where `id` is an integer one greater than the highest existing `id` number and `name` is a short string somehow related to the attack. 
 
-Note on naming the file: Use `id-name` where is 
+| Field                           | Required  | Description    |
+| -------------                   | --------- | -------------  |
+| compromise-name                 | Yes       |  A short, descriptive name for the attack. Err on the side of widely recognizable  |
+| description                     | Yes       |  Provide a description of the attack. Several sentences will often be adequate.  |
+| compromise-classification       | Yes       |  Use attack class labels from the attack tree (https://arxiv.org/abs/2204.04008), in this paper, creating a separate label for each of the relevant nodes that apply to the attack, to the best of available knowledge.  |
+| cwe                             | No        |  If applicable, add the appropriate CWE. https://cwe.mitre.org/  |
+| mitre-attack                    | No        |  If applicable, add the appropriate ATT&CK label. https://attack.mitre.org   |
+| ecosystem                       | Yes       |  The open source ecosystem associated with the attack, e.g. PyPI.  |
+| earliest-evidence-of-compromise | Yes       |  Appropriate formats include: YYYY-mm or YYYY-mm-dd  |
+| date-entry-was-created          | Yes       |  YYYY-mm or YYYY-mm-dd  |
+| references                      | Yes       |  Any references, especially URLs, with information on attack. |
+| malicious-intent                | Yes       |  "Yes" or "No" |
+| packages-affected               | Yes       |  List of packages affected |
+| IOCs                            | No        |  Should list rule name, rule type, and rule specification. |
 
-TODO: Use a table here
-
-compromise-id
-
-NOTE: Use the next highest number, locating the current number by examining the comrpomi
-
-
-| Field                           | Required      | Description    |
-| -------------                   | ------------- | -------------  |
-| compromise-name                 |               |  Content Cell  |
-| description                     |               |  Content Cell  |
-| compromise-classification       |               |  Content Cell  |
-| cwe                             |               |  Content Cell  |
-| mitre-attack                    |               |  Content Cell  |
-| ecosystem                       |               |  Content Cell  |
-| earliest-evidence-of-compromise |               |  Content Cell  |
-| date-entry-was-created          |               |  Content Cell  |
-| date-entry-was-last-updated     |               |  Content Cell  |
-| references                      |               |  Content Cell  |
-| malicious-intent                |               |  Content Cell  |
-| packages-affected               |               |  Content Cell  |
-| IOCs                            |               |  Content Cell  |
-
-
-
-
-compromise-name:
-description:
-compromise-classification:
-Note - Use attack class labels from this attack tree (https://arxiv.org/abs/2204.04008), creating a separate label for each of the relevant nodes that apply to the attack, to the best of existing knowledge.
-cwe: (optional) https://cwe.mitre.org/
-mitre-attack: (optional) https://attack.mitre.org 
-ecosystem:
-earliest-evidence-of-compromise: YYmm or YYmmdd
-date-entry-was-created:
-date-entry-was-last-updated:
-references:
-malicious-intent:
-packages-affected: [ foo, bar, … ]
-IOCs: (optional) [rule1, rule2]
-  --rule-name
-  --rule-type
-  --rule-specification
+Note: This is an experimental effort. When you detect conceptual or pragmatic problems with the data fields, please raise them in an issue. Revising the data fields is a likely outcome of this initial effort.
