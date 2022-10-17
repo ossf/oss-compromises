@@ -33,7 +33,7 @@ Note on naming the file: Use `id-name.yaml` where `id` is an integer one greater
 | -------------                   | --------- | -------------  |
 | compromise-name                 | Yes       |  A short, descriptive name for the attack. Err on the side of widely recognizable  |
 | description                     | Yes       |  Provide a description of the attack. Several sentences will often be adequate.  |
-| compromise-classification       | Yes       |  Use attack class labels from the attack tree (https://arxiv.org/abs/2204.04008), in this paper, creating a separate label for each of the relevant nodes that apply to the attack, to the best of available knowledge.  |
+| compromise-classification       | Yes       |  Use attack class labels from the attack tree (https://arxiv.org/abs/2204.04008), in this paper, creating a separate label for each of the relevant nodes that apply to the attack, to the best of available knowledge. See attack-tree.md for a copy of the tree. |
 | cwe                             | No        |  If applicable, add the appropriate CWE. https://cwe.mitre.org/  |
 | mitre-attack                    | No        |  If applicable, add the appropriate ATT&CK label. https://attack.mitre.org   |
 | ecosystem                       | Yes       |  The open source ecosystem associated with the attack, e.g. PyPI.  |
