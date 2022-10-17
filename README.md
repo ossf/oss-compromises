@@ -37,7 +37,7 @@ Note on naming the file: Use `id-name.yaml` where `id` is an integer one greater
 | cwe                             | No        |  If applicable, add the appropriate CWE. https://cwe.mitre.org/  |
 | mitre-attack                    | No        |  If applicable, add the appropriate ATT&CK label. https://attack.mitre.org   |
 | ecosystem                       | Yes       |  The open source ecosystem associated with the attack, e.g. PyPI.  |
-| earliest-evidence-of-compromise | Yes       |  Appropriate formats include: YYYY-mm or YYYY-mm-dd  |
+| date-earliest-evidence-of-compromise | Yes       |  Appropriate formats include: YYYY-mm or YYYY-mm-dd  |
 | date-entry-was-created          | Yes       |  YYYY-mm or YYYY-mm-dd  |
 | references                      | Yes       |  Any references, especially URLs, with information on attack. |
 | malicious-intent                | Yes       |  "Yes" or "No" |
