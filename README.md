@@ -1,6 +1,10 @@
 # Open Source Software Compromises Dataset
 
+<<<<<<< HEAD
 This is an attempt to create a comprehensive dataset of open source software compromises. The intention is to help parties that want prevent and mitigate open source software compromises.
+=======
+This is an effort to create a comprehensive dataset of open source software compromises. The intention is to help parties that want prevent and mitigate open source software compromises.
+>>>>>>> d9dba429a18fc7284288c6b7f456f778c3c8bc64
 
 All contributions are welcome. Initial effort will focus only on collecting data related to open source software compromises that happen after November 1, 2022. This is an experimental effort.
 
@@ -33,7 +37,11 @@ Note on naming the file: Use `id-name.yaml` where `id` is an integer one greater
 | -------------                   | --------- | -------------  |
 | compromise-name                 | Yes       |  A short, descriptive name for the attack. Err on the side of widely recognizable  |
 | description                     | Yes       |  Provide a description of the attack. Several sentences will often be adequate.  |
+<<<<<<< HEAD
 | compromise-classification       | Yes       |  Use attack class labels from the attack tree (https://arxiv.org/abs/2204.04008), in this paper, creating a separate label for each of the relevant nodes that apply to the attack, to the best of available knowledge. See attack-tree.md for a copy of the tree. |
+=======
+| compromise-classification       | Yes       |  Use attack class labels from the attack tree (https://arxiv.org/abs/2204.04008), in this paper, creating a separate label for each of the relevant nodes that apply to the attack, to the best of available knowledge.  |
+>>>>>>> d9dba429a18fc7284288c6b7f456f778c3c8bc64
 | cwe                             | No        |  If applicable, add the appropriate CWE. https://cwe.mitre.org/  |
 | mitre-attack                    | No        |  If applicable, add the appropriate ATT&CK label. https://attack.mitre.org   |
 | ecosystem                       | Yes       |  The open source ecosystem associated with the attack, e.g. PyPI.  |
