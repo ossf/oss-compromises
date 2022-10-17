@@ -29,19 +29,19 @@ Make a PR and place a new YAML file into the compromises folder. Each compromise
 
 Note on naming the file: Use `id-name.yaml` where `id` is an integer one greater than the highest existing `id` number and `name` is a short string somehow related to the attack. 
 
-| Field                           | Required  | Description    |
-| -------------                   | --------- | -------------  |
-| compromise-name                 | Yes       |  A short, descriptive name for the attack. Err on the side of widely recognizable  |
-| description                     | Yes       |  Provide a description of the attack. Several sentences will often be adequate.  |
-| compromise-classification       | Yes       |  Use attack class labels from the attack tree (https://arxiv.org/abs/2204.04008), in this paper, creating a separate label for each of the relevant nodes that apply to the attack, to the best of available knowledge. See attack-tree.md for a copy of the tree. |
-| cwe                             | No        |  If applicable, add the appropriate CWE. https://cwe.mitre.org/  |
-| mitre-attack                    | No        |  If applicable, add the appropriate ATT&CK label. https://attack.mitre.org   |
-| ecosystem                       | Yes       |  The open source ecosystem associated with the attack, e.g. PyPI.  |
-| date-earliest-evidence-of-compromise | Yes       |  Appropriate formats include: YYYY-mm or YYYY-mm-dd  |
-| date-entry-was-created          | Yes       |  YYYY-mm or YYYY-mm-dd  |
-| references                      | Yes       |  Any references, especially URLs, with information on attack. |
-| malicious-intent                | Yes       |  "Yes" or "No" |
-| packages-affected               | Yes       |  List of packages affected |
-| IOCs                            | No        |  Should list rule name, rule type, and rule specification. |
+| Field                           | Required  | Type   | Description    |
+| -------------                   | --------- | -----  | -------------  |
+| compromise-name                 | Yes       | string |  A short, descriptive name for the attack. Err on the side of widely recognizable  |
+| description                     | Yes       | string |  Provide a description of the attack. Several sentences will often be adequate.  |
+| compromise-classification       | Yes       | string (can use a sequence) |  Use attack class labels from the attack tree (https://arxiv.org/abs/2204.04008), in this paper, creating a separate label for each of the relevant nodes that apply to the attack, to the best of available knowledge. See attack-tree.md for a copy of the tree. |
+| cwe                             | No        | string |  If applicable, add the appropriate CWE. https://cwe.mitre.org/  |
+| mitre-attack                    | No        | string |  If applicable, add the appropriate ATT&CK label. https://attack.mitre.org   |
+| ecosystem                       | Yes       | string |  The open source ecosystem associated with the attack, e.g. PyPI.  |
+| date-earliest-evidence-of-compromise | Yes       | string |  Appropriate formats include: YYYY-mm or YYYY-mm-dd  |
+| date-entry-was-created          | Yes       | string |  YYYY-mm or YYYY-mm-dd  |
+| references                      | Yes       | string (can use a sequence) |  Any references, especially URLs, with information on attack. |
+| malicious-intent                | Yes       | string |  "yes" or "no" |
+| packages-affected               | Yes       | string array |  List of packages affected |
+| IOCs                            | No        | TBD |  Should list rule name, rule type, and rule specification. |
 
 Note: This is an experimental effort. When you detect conceptual or pragmatic problems with the data fields, please raise them in an issue. Revising the data fields is a likely outcome of this initial effort.
