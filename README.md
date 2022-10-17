@@ -2,7 +2,7 @@
 
 This is an effort to create a comprehensive dataset of open source software compromises. The intention is to help parties that want prevent and mitigate open source software compromises.
 
-All contributions are welcome. Initial effort will focus only on collecting data related to open source software compromises that happen after November 1, 2022. This is an experimental effort.
+All contributions are welcome. Initial effort will focus only on collecting data related to open source software compromises that happen after November 1, 2022. This is an experimental effort housed within the OpenSSF integrity working group
 
 ## Inclusion Criteria, or What is an Open Source Software Compromise?
 
