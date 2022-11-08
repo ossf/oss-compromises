@@ -41,7 +41,7 @@ Note on naming the file: Use `id-name.yaml` where `id` is an integer one greater
 | date-entry-was-created          | Yes       | string |  YYYY-mm or YYYY-mm-dd  |
 | references                      | Yes       | string (can use a sequence) |  Any references, especially URLs, with information on attack. |
 | malicious-intent                | Yes       | string |  "yes" or "no" |
-| packages-affected               | Yes       | string array |  List of packages affected |
+| packages-affected               | Yes       | string list |  List of packages affected |
 | IOCs                            | No        | TBD |  Should list rule name, rule type, and rule specification. |
 
 Note: This is an experimental effort. When you detect conceptual or pragmatic problems with the data fields, please raise them in an issue. Revising the data fields is a likely outcome of this initial effort.
