@@ -1,0 +1,14 @@
+---
+ compromise-id: 2
+ compromise-name: "log4shell-us-gov"
+ description: "A U.S. goverment agency is compromised via log4shell"
+ compromise-classification:
+  - "known-oss-vulnerability"
+ ecosystem: "java"
+ date-earliest-evidence-of-compromise: "04-01-22"
+ date-entry-was-created:
+  - "12-15-22"
+ references:
+  - "https://www.cisa.gov/uscert/ncas/alerts/aa22-320a"
+ malicious-intent: "no"
+ packages-affected: ["log4j-core"]
